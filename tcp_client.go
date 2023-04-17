@@ -29,7 +29,7 @@ func sokIAlfabetet(symbol rune, alfabet []rune) int {
 }
 
 func main() {
-	conn, err := net.Dial("tcp", "172.17.0.2:44167")
+	conn, err := net.Dial("tcp", "172.17.0.4:42543")
 	if err != nil {
 		log.Fatal(err)
 	}
