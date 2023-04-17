@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-var ALF_SEM03 []rune = []rune("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.,:; ")
+var ALF_SEM03 []rune = []rune("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.,:; -")
 
 func Krypter(melding []rune, alphabet []rune, chiffer int) []rune {
 	kryptertMelding := make([]rune, len(melding))
@@ -29,7 +29,7 @@ func sokIAlfabetet(symbol rune, alfabet []rune) int {
 }
 
 func main() {
-	conn, err := net.Dial("tcp", "172.17.0.4:42543")
+	conn, err := net.Dial("tcp", "172.17.0.4:37867")
 	if err != nil {
 		log.Fatal(err)
 	}
